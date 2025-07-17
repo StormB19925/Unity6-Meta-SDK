@@ -777,6 +777,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5401171177914133282, guid: 009e130e50c4f9947a302cfdde129676, type: 3}
+      propertyPath: SceneSettings.DataSource
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5528587145450049469, guid: 009e130e50c4f9947a302cfdde129676, type: 3}
       propertyPath: m_Name
       value: '[BuildingBlock] MR Utility Kit'
@@ -1008,6 +1012,10 @@ PrefabInstance:
     - target: {fileID: 4978703931419680334, guid: f9173b766f9f7364cb1183bef67a3e7a, type: 3}
       propertyPath: m_Name
       value: '[BuildingBlock] Camera Rig'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305809328126898198, guid: f9173b766f9f7364cb1183bef67a3e7a, type: 3}
+      propertyPath: _enableDynamicResolution
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8571237497524939989, guid: f9173b766f9f7364cb1183bef67a3e7a, type: 3}
       propertyPath: m_LocalPosition.x
