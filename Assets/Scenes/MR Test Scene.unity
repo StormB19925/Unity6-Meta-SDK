@@ -1289,6 +1289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[BuildingBlock] Basketball Spawner'
       objectReference: {fileID: 0}
+    - target: {fileID: 5825946395503152898, guid: f09738d75c8852b4b989ef08283d5f6e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
