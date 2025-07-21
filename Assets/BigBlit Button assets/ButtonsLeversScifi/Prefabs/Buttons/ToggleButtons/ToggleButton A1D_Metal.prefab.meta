@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2cf0e6457a6514f419be14cd577597d9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 200419
+  packageName: Buttons, Levers, Switches Scifi - Pro
+  packageVersion: 1.0
+  assetPath: Assets/BigBlit/ButtonsLeversScifi/Prefabs/Buttons/ToggleButtons/ToggleButton
+    A1D_Metal.prefab
+  uploadId: 767965

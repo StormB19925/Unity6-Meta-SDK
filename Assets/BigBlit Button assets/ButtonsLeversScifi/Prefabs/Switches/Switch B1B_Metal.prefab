@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &702906842392658737
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 246167363613277194, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7438d2d4a5852694ca9202fac7048189, type: 2}
+    - target: {fileID: 902448003942997786, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_Name
+      value: SwitchHandle B1B_Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917786979048881660, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 195da4e3f9c68744dab8b8ecdef52905, type: 2}
+    - target: {fileID: 8091779160828544659, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091779160828544659, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091779160828544659, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091779160828544659, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091779160828544659, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091779160828544659, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091779160828544659, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091779160828544659, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091779160828544659, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091779160828544659, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091779160828544659, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8863109264309771305, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_Name
+      value: Switch B1B_Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8863109264309771305, guid: af4b297312d79594db9e2d9f41f1e6c4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af4b297312d79594db9e2d9f41f1e6c4, type: 3}

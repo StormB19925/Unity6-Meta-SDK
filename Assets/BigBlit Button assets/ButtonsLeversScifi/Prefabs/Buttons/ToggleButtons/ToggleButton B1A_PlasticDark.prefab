@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7044170990280770039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 535114088, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: _pressedColor.b
+      value: 0.3160377
+      objectReference: {fileID: 0}
+    - target: {fileID: 535114088, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: _pressedColor.g
+      value: 0.3160377
+      objectReference: {fileID: 0}
+    - target: {fileID: 535114088, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: _pressedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 535114088, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: _toggleOnColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 535114088, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: _toggleOnColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 535114088, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: _toggleOnColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 535114088, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: _toggleOnColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 535114088, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: _toggleOffColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 535114088, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: _toggleOffColor.b
+      value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 535114088, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: _toggleOffColor.g
+      value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 535114088, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: _toggleOffColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159265115647290347, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_Name
+      value: ToggleButton B1A_PlasticDark
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498776076159611217, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498776076159611217, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498776076159611217, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498776076159611217, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498776076159611217, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498776076159611217, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498776076159611217, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498776076159611217, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498776076159611217, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498776076159611217, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498776076159611217, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 535114091, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+    - {fileID: 535114087, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+--- !u!1 &424128483339967692 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7215649143267958075, guid: 40393767a0b417442a58d0cd679e8825, type: 3}
+  m_PrefabInstance: {fileID: 7044170990280770039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1061843704958168381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424128483339967692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da5134ba4fbcd046aa2f50beaafe6c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isPressable: 1
+  _isDisabled: 0
+  _isClickable: 1
+  _clickMaxDelay: 0.5
+  _longClickDuration: 0.75
+  toggleOnTrigger: 3
+  toggleOffTrigger: 3
+  toggleOnPos: 0.75
+  _defaultToggledOn: 0
+--- !u!114 &2867350716572606207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424128483339967692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4993b2f260e7f4089793b4e779f9cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onToggleOn:
+    m_PersistentCalls:
+      m_Calls: []
+  onToggleOff:
+    m_PersistentCalls:
+      m_Calls: []

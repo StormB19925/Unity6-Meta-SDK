@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9120284049842251835
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 399053931548154107, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8ec40fdb7cecb9944bb60eb836ad8a8e, type: 2}
+    - target: {fileID: 1567980216582235028, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567980216582235028, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567980216582235028, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567980216582235028, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567980216582235028, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567980216582235028, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567980216582235028, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567980216582235028, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567980216582235028, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567980216582235028, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567980216582235028, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200365894717749550, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_Name
+      value: Button A1E_Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200365894717749550, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328164606816140901, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonHandle A1E_Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261502857550125002, guid: 1af37689f90b0954387e06c79dce63d7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9583d649381d1284483cb9d1ccb9abf2, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1af37689f90b0954387e06c79dce63d7, type: 3}

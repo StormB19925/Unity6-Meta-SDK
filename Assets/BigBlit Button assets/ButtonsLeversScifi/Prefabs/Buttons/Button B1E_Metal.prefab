@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7908605949525856061
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 320258341738226103, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonHandle B1E2_Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400027087121941754, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7438d2d4a5852694ca9202fac7048189, type: 2}
+    - target: {fileID: 2450212728479436845, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450212728479436845, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450212728479436845, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450212728479436845, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450212728479436845, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450212728479436845, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450212728479436845, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450212728479436845, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450212728479436845, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450212728479436845, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450212728479436845, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975533354756606615, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_Name
+      value: Button B1E_Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975533354756606615, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3624214221882370882, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 195da4e3f9c68744dab8b8ecdef52905, type: 2}
+    - target: {fileID: 6053153154659044774, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonHandle B1E1_Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450741947880149158, guid: c987aadcfff9f2d4483f9a3748964a0d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7438d2d4a5852694ca9202fac7048189, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c987aadcfff9f2d4483f9a3748964a0d, type: 3}

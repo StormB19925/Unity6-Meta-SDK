@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 65c3d938078020d438704ad5fe34fa12
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 200419
+  packageName: Buttons, Levers, Switches Scifi - Pro
+  packageVersion: 1.0
+  assetPath: Assets/BigBlit/ButtonsLeversScifi/Prefabs/Buttons/SwitchButtons/SwitchButton
+    B1E_Metal.prefab
+  uploadId: 767965

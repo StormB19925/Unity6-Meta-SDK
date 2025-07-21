@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a667d0ed8d7e5554a99a8505b3805f66
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 200419
+  packageName: Buttons, Levers, Switches Scifi - Pro
+  packageVersion: 1.0
+  assetPath: Assets/BigBlit/ButtonsLeversScifi/Prefabs/Buttons/ToggleButtons/ToggleButton
+    A1D_PlasticDark.prefab
+  uploadId: 767965

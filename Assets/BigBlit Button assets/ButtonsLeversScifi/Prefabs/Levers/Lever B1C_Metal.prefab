@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2177862033350189574
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6226067476453073477, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7438d2d4a5852694ca9202fac7048189, type: 2}
+    - target: {fileID: 7577313460966944535, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 195da4e3f9c68744dab8b8ecdef52905, type: 2}
+    - target: {fileID: 8226099608004579010, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_Name
+      value: Lever B1C_Metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226099608004579010, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746881831932499064, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746881831932499064, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746881831932499064, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746881831932499064, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746881831932499064, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746881831932499064, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746881831932499064, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746881831932499064, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746881831932499064, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746881831932499064, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746881831932499064, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913110215533278928, guid: 7f468a94bb198d8458c19b91b0c021d2,
+        type: 3}
+      propertyPath: m_Name
+      value: LeverHandle B1C_Metal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7f468a94bb198d8458c19b91b0c021d2, type: 3}

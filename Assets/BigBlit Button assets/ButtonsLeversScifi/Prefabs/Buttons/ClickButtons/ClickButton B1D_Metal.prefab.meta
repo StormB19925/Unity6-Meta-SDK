@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cba4ca4bd9a2d4342b601f2c6171f92d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 200419
+  packageName: Buttons, Levers, Switches Scifi - Pro
+  packageVersion: 1.0
+  assetPath: Assets/BigBlit/ButtonsLeversScifi/Prefabs/Buttons/ClickButtons/ClickButton
+    B1D_Metal.prefab
+  uploadId: 767965

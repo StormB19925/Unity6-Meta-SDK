@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 57e2e4ed97a453645b85377168df20fa
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 200419
+  packageName: Buttons, Levers, Switches Scifi - Pro
+  packageVersion: 1.0
+  assetPath: Assets/BigBlit/ButtonsLeversScifi/Prefabs/Buttons/ClickButtons/ClickButton
+    B1B_PlasticDark.prefab
+  uploadId: 767965

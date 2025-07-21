@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8ea61914dd61a3e4886af1e05ba922ea
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 200419
+  packageName: Buttons, Levers, Switches Scifi - Pro
+  packageVersion: 1.0
+  assetPath: Assets/BigBlit/ActivePack/Scripts/Runtime/Behaviours/ButtonSwitch.cs
+  uploadId: 767965
