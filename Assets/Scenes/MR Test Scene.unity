@@ -173,8 +173,8 @@ RectTransform:
   m_GameObject: {fileID: 245578064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20.07, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1506841133}
   m_Father: {fileID: 1315603629}
@@ -435,6 +435,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1022207999551288173, guid: 21f838e5eb5b4b6458aa430712749327, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022207999551288176, guid: 21f838e5eb5b4b6458aa430712749327, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2376335374346945222, guid: 21f838e5eb5b4b6458aa430712749327, type: 3}
       propertyPath: m_Name
       value: ToggleButton A1A_Metal
@@ -518,7 +526,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2376335374346945222, guid: 21f838e5eb5b4b6458aa430712749327, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1103501681}
+      addedObject: {fileID: 1103501688}
+    - targetCorrespondingSourceObject: {fileID: 2376335374346945222, guid: 21f838e5eb5b4b6458aa430712749327, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1103501683}
     - targetCorrespondingSourceObject: {fileID: 1656051770434512864, guid: 21f838e5eb5b4b6458aa430712749327, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1357409860}
@@ -528,7 +539,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2376335374346945222, guid: 21f838e5eb5b4b6458aa430712749327, type: 3}
   m_PrefabInstance: {fileID: 1103501679}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1103501681
+--- !u!4 &1103501682 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1487536453961003275, guid: 21f838e5eb5b4b6458aa430712749327, type: 3}
+  m_PrefabInstance: {fileID: 1103501679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1103501683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -537,12 +553,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 1103501680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7c6048f49064ce49ad6c8d96f025474, type: 3}
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToActivate:
-  - {fileID: 2011624305336756024}
-  onButtonPressed:
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 0}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 1103501682}
+  _maxGrabPoints: -1
+  _rigidbody: {fileID: 0}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 1
+--- !u!114 &1103501688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103501680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe994a30e6d18bc4ab81546e1cd0f3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToActivate: []
+  onGrabbed:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2011624305336756024}
@@ -648,8 +685,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315603625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.654}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: 0, y: 0, z: 0.697}
+  m_LocalScale: {x: 0.049999997, y: 0.049999997, z: 0.049999997}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 245578065}
@@ -657,7 +694,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.02, y: 1.094}
+  m_AnchoredPosition: {x: -0.02, y: 1.182}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1315603630
