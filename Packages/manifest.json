@@ -3,6 +3,7 @@
     "com.meta.xr.mrutilitykit": "77.0.0",
     "com.meta.xr.sdk.core": "77.0.0",
     "com.meta.xr.sdk.interaction.ovr": "77.0.0",
+    "com.meta.xr.simulator": "77.0.0",
     "com.unity.ai.navigation": "2.0.4",
     "com.unity.collab-proxy": "2.8.2",
     "com.unity.ide.rider": "3.0.31",
