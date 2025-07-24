@@ -790,7 +790,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  _handInteractor: {fileID: 0}
+  _handInteractor: {fileID: 1357409850}
 --- !u!1 &1315603625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1192,10 @@ PrefabInstance:
       value: Test Cube
       objectReference: {fileID: 0}
     - target: {fileID: 4024921739090428579, guid: 3496565a96c075649beb3bec854bd883, type: 3}
+      propertyPath: _handInteractor
+      value: 
+      objectReference: {fileID: 2036751114}
+    - target: {fileID: 4024921739090428579, guid: 3496565a96c075649beb3bec854bd883, type: 3}
       propertyPath: _objectsToActivate.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1202,7 +1206,7 @@ PrefabInstance:
     - target: {fileID: 4024921739090428579, guid: 3496565a96c075649beb3bec854bd883, type: 3}
       propertyPath: '_objectsToActivate.Array.data[0]'
       value: 
-      objectReference: {fileID: 2036751114}
+      objectReference: {fileID: 2011624305336756024}
     - target: {fileID: 4024921739090428579, guid: 3496565a96c075649beb3bec854bd883, type: 3}
       propertyPath: _onGrabbed.m_PersistentCalls.m_Calls.Array.size
       value: 1
