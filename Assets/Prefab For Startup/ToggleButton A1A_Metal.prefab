@@ -98,9 +98,9 @@ GameObject:
   - component: {fileID: 2407098447179944315}
   - component: {fileID: 469302353919403441}
   - component: {fileID: 1609926831762100939}
-  - component: {fileID: 6895048438621637708}
   - component: {fileID: 3998403689610133266}
   - component: {fileID: -52012231587454324}
+  - component: {fileID: 6313547823568763878}
   m_Layer: 0
   m_Name: ToggleButton A1A_Metal
   m_TagString: Untagged
@@ -200,36 +200,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.17128208, y: 0.17128207, z: 0.0696145}
   m_Center: {x: 0.0000117607415, y: -0.00000346452, z: 0.034807242}
---- !u!114 &6895048438621637708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2126737448815903844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe994a30e6d18bc4ab81546e1cd0f3ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectsToActivate:
-  - {fileID: 3135273143538786626}
-  _onGrabbed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  _handInteractor: {fileID: 3135273143538786626}
 --- !u!114 &3998403689610133266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,7 +218,7 @@ MonoBehaviour:
   _oneGrabTransformer: {fileID: 0}
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 3016578980353308585}
-  _maxGrabPoints: -1
+  _maxGrabPoints: 0
   _rigidbody: {fileID: 0}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
@@ -265,6 +235,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pressableTarget: {fileID: 0}
+--- !u!114 &6313547823568763878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126737448815903844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23223b94de4b451438895871f30e0b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetAnimator: {fileID: 6245462748463953512}
+  _animationBoolName: Button
+  _onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  _onReleased:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3135273143538786626
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,11 +280,6 @@ GameObject:
   - component: {fileID: 3666979370540273610}
   - component: {fileID: 3699246251741902287}
   - component: {fileID: 6245462748463953512}
-  - component: {fileID: 3699246251741902290}
-  - component: {fileID: 5880467992904926097}
-  - component: {fileID: 3699611832317822706}
-  - component: {fileID: 6337714797829166430}
-  - component: {fileID: 4217795788020140372}
   m_Layer: 0
   m_Name: ButtonHandle A1A_Metal
   m_TagString: Untagged
@@ -401,127 +398,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3699246251741902290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3135273143538786626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ccf89439b12fc942b5eeb5d106cf022, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 0}
-  _pressedColor: {r: 1, g: 0.08962262, b: 0.08962262, a: 1}
-  _normalColor: {r: 0, g: 0, b: 0, a: 1}
-  _positionChangedColor: {r: 0, g: 0, b: 0, a: 1}
-  _positionChangedDuration: 0
-  _clickColor: {r: 0, g: 0, b: 0, a: 1}
-  _clickDuration: 0.35
-  _longClickColor: {r: 1, g: 1, b: 1, a: 1}
-  _longClickDuration: 0.5
-  _toggleOnColor: {r: 1, g: 0.09019608, b: 0.09019608, a: 1}
-  _toggleOffColor: {r: 0, g: 0, b: 0, a: 0}
-  _disabledColor: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &5880467992904926097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3135273143538786626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97916d1bb7ffb94c9839143d9d52097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animationSmoothing: 0.1
-  _animationClip: {fileID: 7400000, guid: b7108c94493b3e0418e6a177d6982efc, type: 2}
-  _invert: 0
-  _freezePosition:
-    x: 1
-    y: 1
-    z: 0
-  _relativePosition:
-    x: 0
-    y: 0
-    z: 1
-  _relativeRotation: 0
-  _animClipRangeMin: 0
-  _animClipRangeMax: 0.5
---- !u!114 &3699611832317822706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3135273143538786626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3da5134ba4fbcd046aa2f50beaafe6c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isPressable: 1
-  _isDisabled: 0
-  _isClickable: 1
-  _clickMaxDelay: 0.5
-  _longClickDuration: 0.75
-  toggleOnTrigger: 3
-  toggleOffTrigger: 3
-  toggleOnPos: 0.75
-  _defaultToggledOn: 0
---- !u!114 &6337714797829166430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3135273143538786626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a4993b2f260e7f4089793b4e779f9cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onToggleOn:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  onToggleOff:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &4217795788020140372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3135273143538786626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 3998403689610133266}
-  _boundsCollider: {fileID: 3699246251741902287}
-  _colliders:
-  - {fileID: 3699246251741902287}
 --- !u!1 &7215008739870454586
 GameObject:
   m_ObjectHideFlags: 0

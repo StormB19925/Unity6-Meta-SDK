@@ -33,6 +33,24 @@ public class ActivateOnGrab : MonoBehaviour
     [SerializeField]
     private UnityEvent _onGrabbed;
 
+    [Header("Animation Settings")]
+    [Tooltip("The mode to use for animation: a one-shot trigger or a boolean toggle.")]
+    [SerializeField]
+    private AnimationMode _animationMode = AnimationMode.Trigger;
+
+    [Tooltip("The Animator component to control when the object is grabbed.")]
+    [SerializeField]
+    private Animator _targetAnimator;
+
+    [Tooltip("The name of the trigger parameter in the Animator to fire (used in Trigger mode).")]
+    [SerializeField]
+    private string _animationTriggerName;
+
+    [Tooltip("The name of the boolean parameter in the Animator to toggle (used in ToggleBool mode).")]
+    [SerializeField]
+    private string _animationBoolName;
+
+
     [Tooltip("The GameObject containing the primary grab interactor (e.g., TouchHandGrabInteractable). This will be activated by the script.")]
     [SerializeField]
     private GameObject _handInteractor;
@@ -42,9 +60,8 @@ public class ActivateOnGrab : MonoBehaviour
     // This component manages the grabbable behavior of the object.
     private Grabbable _grabbable;
 
-    // A private reference to the TouchHandGrabInteractable component.
-    // This component enables hand-tracking-based grab interactions.
-    private TouchHandGrabInteractable _touchHandGrabInteractable;
+    // Private state for the toggle functionality.
+    private bool _isToggled = false;
 
     /// <summary>
     /// The Awake method is called when the script instance is being loaded.
@@ -73,19 +90,6 @@ public class ActivateOnGrab : MonoBehaviour
         }
         // Log a message to confirm that the Grabbable component was found.
         Debug.Log("ActivateOnGrab: Found Grabbable component.", this);
-
-
-        // Attempt to get the TouchHandGrabInteractable component in this GameObject or its children.
-        _touchHandGrabInteractable = GetComponentInChildren<TouchHandGrabInteractable>();
-        if (_touchHandGrabInteractable == null)
-        {
-            // If the TouchHandGrabInteractable component is not found, log an error and exit the method.
-            // This component is required for hand-tracking grab interactions.
-            Debug.LogError("TouchHandGrabInteractable component not found on this GameObject or its children. Please add a TouchHandGrabInteractable component.", this);
-            return;
-        }
-        // Log a message to confirm that the TouchHandGrabInteractable component was found.
-        Debug.Log("ActivateOnGrab: Found TouchHandGrabInteractable component.", this);
 
         // Subscribe the HandlePointerEvent method to the WhenPointerEventRaised event of the Grabbable component.
         // This allows the script to respond to pointer events, such as grabbing.
@@ -154,6 +158,43 @@ public class ActivateOnGrab : MonoBehaviour
         }
         // Invoke the onGrabbed UnityEvent, which can be configured in the Inspector to call other methods.
         _onGrabbed.Invoke();
+
+        // Check if a target animator has been assigned.
+        if (_targetAnimator != null)
+        {
+            // Execute animation logic based on the selected mode.
+            switch (_animationMode)
+            {
+                case AnimationMode.Trigger:
+                    // Fire a one-shot trigger if the name is valid.
+                    if (!string.IsNullOrEmpty(_animationTriggerName))
+                    {
+                        Debug.Log($"ActivateOnGrab: Firing trigger '{_animationTriggerName}' on Animator '{_targetAnimator.name}'.", this);
+                        _targetAnimator.SetTrigger(_animationTriggerName);
+                    }
+                    break;
+
+                case AnimationMode.ToggleBool:
+                    // Toggle the boolean state if the name is valid.
+                    if (!string.IsNullOrEmpty(_animationBoolName))
+                    {
+                        // Invert the toggle state.
+                        _isToggled = !_isToggled;
+                        Debug.Log($"ActivateOnGrab: Setting bool '{_animationBoolName}' to '{_isToggled}' on Animator '{_targetAnimator.name}'.", this);
+                        _targetAnimator.SetBool(_animationBoolName, _isToggled);
+                    }
+                    break;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Defines the animation behavior when the object is grabbed.
+    /// </summary>
+    public enum AnimationMode
+    {
+        Trigger,    // Fires a one-shot trigger.
+        ToggleBool  // Toggles a boolean parameter on and off.
     }
 #else
     /// <summary>
