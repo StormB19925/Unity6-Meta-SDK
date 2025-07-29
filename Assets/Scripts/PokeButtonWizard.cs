@@ -26,7 +26,7 @@ public class PokeButtonWizard : MonoBehaviour
     private void AutoSetupPokeButton()
     {
         // --- Step 1: Ensure a Collider exists ---
-        if (!TryGetComponent<Collider>(out Collider col))
+        if (!TryGetComponent<Collider>(out var col))
         {
             Debug.LogError($"[PokeButtonWizard] No Collider found on '{gameObject.name}'. Please add a Collider (like BoxCollider) first.", this);
             return;
@@ -37,48 +37,63 @@ public class PokeButtonWizard : MonoBehaviour
             col.isTrigger = false;
         }
 
-        // --- Step 2: Add and Configure ClippedPlaneSurface ---
-        if (!TryGetComponent<ClippedPlaneSurface>(out ClippedPlaneSurface surface))
+        // --- Step 2: Add and Configure the base PlaneSurface ---
+        if (!TryGetComponent<PlaneSurface>(out var planeSurface))
         {
-            surface = gameObject.AddComponent<ClippedPlaneSurface>();
-            Debug.Log($"[PokeButtonWizard] Added ClippedPlaneSurface to '{gameObject.name}'.", this);
+            planeSurface = gameObject.AddComponent<PlaneSurface>();
+            Debug.Log($"[PokeButtonWizard] Added PlaneSurface to '{gameObject.name}'.", this);
         }
-        
-        // Use reflection to set the private _plane field, as there is no public Inject method.
-        FieldInfo planeField = typeof(ClippedPlaneSurface).GetField("_plane", BindingFlags.NonPublic | BindingFlags.Instance);
-        if (planeField != null)
+        // Use reflection to set the private _plane field on PlaneSurface.
+        FieldInfo planeTransformField = typeof(PlaneSurface).GetField("_plane", BindingFlags.NonPublic | BindingFlags.Instance);
+        if (planeTransformField != null)
         {
-            planeField.SetValue(surface, this.transform);
-            Debug.Log($"[PokeButtonWizard] Linked Transform to ClippedPlaneSurface using reflection.", this);
+            planeTransformField.SetValue(planeSurface, this.transform);
+            Debug.Log($"[PokeButtonWizard] Linked Transform to PlaneSurface using reflection.", this);
         }
         else
         {
-            Debug.LogError($"[PokeButtonWizard] Could not find the private field '_plane' on ClippedPlaneSurface. The SDK might have changed.", this);
+            Debug.LogError($"[PokeButtonWizard] Could not find the private field '_plane' on PlaneSurface. The SDK might have changed.", this);
             return;
         }
 
+        // --- Step 3: Add and Configure ClippedPlaneSurface to use the PlaneSurface ---
+        if (!TryGetComponent<ClippedPlaneSurface>(out var clippedSurface))
+        {
+            clippedSurface = gameObject.AddComponent<ClippedPlaneSurface>();
+            Debug.Log($"[PokeButtonWizard] Added ClippedPlaneSurface to '{gameObject.name}'.", this);
+        }
+        // Use reflection to set the private _planeSurface field.
+        FieldInfo planeSurfaceField = typeof(ClippedPlaneSurface).GetField("_planeSurface", BindingFlags.NonPublic | BindingFlags.Instance);
+        if (planeSurfaceField != null)
+        {
+            planeSurfaceField.SetValue(clippedSurface, planeSurface);
+            Debug.Log($"[PokeButtonWizard] Linked PlaneSurface to ClippedPlaneSurface using reflection.", this);
+        }
+        else
+        {
+            Debug.LogError($"[PokeButtonWizard] Could not find the private field '_planeSurface' on ClippedPlaneSurface. The SDK might have changed.", this);
+            return;
+        }
 
-        // --- Step 3: Add and Configure PokeInteractable ---
-        if (!TryGetComponent<PokeInteractable>(out PokeInteractable pokeInteractable))
+        // --- Step 4: Add and Configure PokeInteractable ---
+        if (!TryGetComponent<PokeInteractable>(out var pokeInteractable))
         {
             pokeInteractable = gameObject.AddComponent<PokeInteractable>();
             Debug.Log($"[PokeButtonWizard] Added PokeInteractable to '{gameObject.name}'.", this);
         }
-        // Programmatically assign the surface to the 'SurfacePatch' field.
-        pokeInteractable.InjectSurfacePatch(surface);
+        pokeInteractable.InjectSurfacePatch(clippedSurface);
         Debug.Log($"[PokeButtonWizard] Linked ClippedPlaneSurface to PokeInteractable.", this);
 
-
-        // --- Step 4: Add and Configure PointableUnityEventWrapper ---
-        if (!TryGetComponent<PointableUnityEventWrapper>(out PointableUnityEventWrapper eventWrapper))
+        // --- Step 5: Add and Configure PointableUnityEventWrapper ---
+        if (!TryGetComponent<PointableUnityEventWrapper>(out var eventWrapper))
         {
             eventWrapper = gameObject.AddComponent<PointableUnityEventWrapper>();
             Debug.Log($"[PokeButtonWizard] Added PointableUnityEventWrapper to '{gameObject.name}'.", this);
         }
-        // Programmatically assign the interactable to the 'Pointable' field.
         eventWrapper.InjectPointable(pokeInteractable);
         Debug.Log($"[PokeButtonWizard] Linked PokeInteractable to PointableUnityEventWrapper.", this);
 
         Debug.Log($"<color=green><b>[PokeButtonWizard] Auto-setup complete for '{gameObject.name}'.</b></color> You can now configure the events on the PointableUnityEventWrapper and then remove this wizard component.", this);
     }
 }
+// Note: This script assumes you have the Meta Interaction SDK installed and the necessary components available.
