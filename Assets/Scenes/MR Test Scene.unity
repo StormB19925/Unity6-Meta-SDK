@@ -1139,11 +1139,125 @@ PrefabInstance:
       propertyPath: m_Name
       value: DragLever B1B_PlasticDark Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4583124628698942985, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
+    - {fileID: 4583124629660503171, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
+    - {fileID: 4583124629660503174, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
+    - {fileID: 4583124629660503175, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
+    - {fileID: 4583124629660503176, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5643572007441920972, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 847811398}
+    - targetCorrespondingSourceObject: {fileID: 5062908300344290840, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 847811400}
+    - targetCorrespondingSourceObject: {fileID: 5062908300344290840, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 847811399}
+    - targetCorrespondingSourceObject: {fileID: 5062908300344290840, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 847811401}
   m_SourcePrefab: {fileID: 100100000, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
+--- !u!1 &847811396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5643572007441920972, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
+  m_PrefabInstance: {fileID: 847811395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &847811397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5062908300344290840, guid: 9e392f65388a3df47beb93001521b7f6, type: 3}
+  m_PrefabInstance: {fileID: 847811395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &847811398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847811396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc004e0c1d01e6c458825e52c00fa580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _toggleInValue: 0.5
+  _springed: 1
+  _value: 0
+  _isDisabled: 0
+--- !u!114 &847811399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847811397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 124f4583f657475469a45ab6fca8f921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pivotTransform: {fileID: 0}
+  _rotationAxis: 2
+  _constraints:
+    MinAngle:
+      Constrain: 1
+      Value: -45
+    MaxAngle:
+      Constrain: 1
+      Value: 45
+--- !u!114 &847811400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847811397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 0}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 0}
+  _maxGrabPoints: -1
+  _rigidbody: {fileID: 0}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 1
+--- !u!114 &847811401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847811397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dbbc106a3ec164ea6e615e4759c7e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotateTransformer: {fileID: 847811399}
+  _onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 847811397}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1315603625
 GameObject:
   m_ObjectHideFlags: 0
