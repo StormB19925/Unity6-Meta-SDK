@@ -1974,6 +1974,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: DragLever B1B_PlasticDark Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2203276030322403158, guid: 6aba0c90dfcd24b4a9345e20c2ceec52, type: 3}
+      propertyPath: _onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203276030322403158, guid: 6aba0c90dfcd24b4a9345e20c2ceec52, type: 3}
+      propertyPath: _onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203276030322403158, guid: 6aba0c90dfcd24b4a9345e20c2ceec52, type: 3}
+      propertyPath: _onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2011624305336756024}
+    - target: {fileID: 2203276030322403158, guid: 6aba0c90dfcd24b4a9345e20c2ceec52, type: 3}
+      propertyPath: _onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203276030322403158, guid: 6aba0c90dfcd24b4a9345e20c2ceec52, type: 3}
+      propertyPath: _onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203276030322403158, guid: 6aba0c90dfcd24b4a9345e20c2ceec52, type: 3}
+      propertyPath: _onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203276030322403158, guid: 6aba0c90dfcd24b4a9345e20c2ceec52, type: 3}
+      propertyPath: _onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203276030322403158, guid: 6aba0c90dfcd24b4a9345e20c2ceec52, type: 3}
+      propertyPath: _onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
