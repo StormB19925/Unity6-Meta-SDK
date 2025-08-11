@@ -1641,6 +1641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnablePrefabs:
   - {fileID: 8249221423617238257, guid: 1e7917b7285257c48aeec54aa872cc33, type: 3}
+  - {fileID: 887572799917311527, guid: 8db73ff25d62a234aa010d1dcde2c741, type: 3}
   _spawnSurface: {fileID: 220696842}
   _blockingLayers:
     serializedVersion: 2
