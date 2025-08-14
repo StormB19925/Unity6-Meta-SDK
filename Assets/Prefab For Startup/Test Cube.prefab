@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6187932389461475330}
   - component: {fileID: 554710172260226091}
   - component: {fileID: 6356166709504906406}
-  - component: {fileID: 4024921739090428579}
   m_Layer: 0
   m_Name: Test Cube
   m_TagString: Untagged
@@ -161,35 +160,6 @@ MonoBehaviour:
   _rigidbody: {fileID: 554710172260226091}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
---- !u!114 &4024921739090428579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979409009670182773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe994a30e6d18bc4ab81546e1cd0f3ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToActivate:
-  - {fileID: 0}
-  onGrabbed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!1 &6801735085229875275
 GameObject:
   m_ObjectHideFlags: 0
